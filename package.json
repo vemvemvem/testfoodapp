@@ -1,0 +1,24 @@
+{
+  "name": "app_12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.1",
+    "express-validator": "^3.1.2",
+    "mongoose": "^4.8.4",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0"
+  }
+}

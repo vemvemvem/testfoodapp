@@ -1,0 +1,48 @@
+
+{{# if success}}
+
+<div class="success">
+<p> Form has been submitted successfully </p>
+</div>
+
+
+{{ else }}
+	{{# if errors }}
+		<section class="errors">
+			<ul>
+				{{# each errors }}
+				<ul>
+					<li>{{ this.msg }}</li>
+				</ul>
+				{{/each}}
+			</ul>
+		</section>
+{{/if}}
+
+<h3> Hello world and welcome to the form</h3>
+
+<div class="inline">
+<form method="POST" action="form_post" autocomplete="off">
+<input type="textarea" name="name" placeholder="name" autoFocus>
+<br><br>
+<input type="textarea" name="carbs" placeholder="carbs">
+<br><br>
+<input type="textarea" name="proteins" placeholder="proteins">
+<br><br>
+<input type="textarea" name="fats" placeholder="fats">
+<br><br>
+
+<button> Submit </button>
+</form>
+</div><br>
+<form method="POST" action="form_query">
+<input type="textarea" name="querydb" placeholder="search MongoDB by name">
+<br><br>
+<div>
+<button> Query </button>
+</form>
+</div>
+
+
+{{/if}}
+
